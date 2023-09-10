@@ -137,6 +137,8 @@
     border-radius: 7px;
     cursor: pointer;
     transition: all 0.2s ease;
+border: none;
+ background-color: var(--primary-color);
   }
 
   button:disabled {
@@ -144,7 +146,8 @@
   }
 
   button:hover {
-    background-color: hsl(214.3 31.8% 91.4%);
+     transform: translateY(-3px);
+    box-shadow: 0px 10px 50px -17px var(--primary-color);
   }
 
   .actions {
