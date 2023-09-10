@@ -1,0 +1,151 @@
+:root {
+  --color-dark: #252525;
+  --color-light: #eaeaea;
+  /* --color-light: #efefef; */
+  --color-primary: #1a8fe3;
+
+  --text: #000;
+  --bg: #fff;
+  --primary: #cef99a;
+  --secondary: #cafce0;
+  --accent: #88ec0e;
+  --danger: #d3034f;
+
+  --primary-color: #4685ff;
+  --accent-color: #ffa061;
+
+  --forms: #f7ebda;
+
+  --size-step-0: clamp(1rem, calc(0.96rem + 0.22vw), 1.13rem);
+  --size-step-1: clamp(1.25rem, calc(1.16rem + 0.43vw), 1.5rem);
+  --size-step-2: clamp(1.56rem, calc(1.41rem + 0.76vw), 2rem);
+  --size-step-3: clamp(1.95rem, calc(1.71rem + 1.24vw), 2.66rem);
+  --size-step-4: clamp(2.44rem, calc(2.05rem + 1.93vw), 3.55rem);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-padding-top: 3em;
+}
+
+::-webkit-scrollbar {
+  margin-left: 1em;
+}
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: rgba(131, 131, 131, 0.1);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(129, 129, 129, 0.9);
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(129, 129, 129, 0.5);
+}
+
+.dark {
+  --text: #fcfaff;
+  --bg: #000000;
+  --primary: #cef99a;
+  --secondary: #022b14;
+  --accent: #cef99a;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* html{
+  height: 100%;
+} */
+
+body {
+  background: var(--color-light);
+  color: var(--color-dark);
+  padding: 2em;
+  font-family: "Roboto", sans-serif;
+  font-size: var(--size-step-0);
+  line-height: 1.7;
+  height: 100dvh;
+}
+
+article {
+  max-width: 75rem;
+  margin-inline: auto;
+}
+
+article > * {
+  max-width: 130ch;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+h1 {
+  font-size: var(--size-step-4);
+}
+h2 {
+  font-size: var(--size-step-3);
+}
+h3 {
+  font-size: var(--size-step-2);
+}
+
+h1 {
+  max-width: 20ch;
+}
+
+h2,
+h3 {
+  max-width: 28ch;
+}
+
+@supports (text-wrap: balance) {
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
+  }
+}
+
+a {
+  color: currentColor;
+  text-decoration-color: var(--color-primary);
+  text-decoration-thickness: 0.3ex;
+  text-underline-offset: 0.3ex;
+}
+
+.no-decoration {
+  text-decoration: none;
+}
+
+input,
+button {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.flow > * + * {
+  margin-block-start: var(--flow-space, 1em);
+}
+
+:is(h1, h2, h3) + * {
+  --flow-space: 0.5em;
+}
+
+h1 + * {
+  --flow-space: 2em;
+}
+
+@media screen and (max-width: 421px) {
+  body {
+    padding: 0.5em;
+  }
+}
