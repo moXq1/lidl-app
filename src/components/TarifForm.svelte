@@ -30,19 +30,36 @@
 
       <div>
         <label for="">Текущие</label>
-        <input required min="0" bind:value={currWater} type="number" />
+        <input
+          step="0.01"
+          required
+          min="0"
+          bind:value={currWater}
+          type="number"
+        />
       </div>
       <div>
         <label for="">Предыдущие</label>
-        <input required min="0" bind:value={prevWater} type="number" />
+        <input
+          step="0.01"
+          required
+          min="0"
+          bind:value={prevWater}
+          type="number"
+        />
       </div>
       <div>
         <label for="">Разница</label>
-        <input bind:value={distinctionWater} disabled type="number" />
+        <input
+          step="0.01"
+          bind:value={distinctionWater}
+          disabled
+          type="number"
+        />
       </div>
       <div>
         <label for="">Результат</label>
-        <input bind:value={totalWater} disabled type="number" />
+        <input step="0.01" bind:value={totalWater} disabled type="number" />
       </div>
     </div>
   </div>
@@ -56,19 +73,31 @@
       {/if}
       <div>
         <label for="">Текущие</label>
-        <input required min="0" bind:value={currGas} type="number" />
+        <input
+          step="0.01"
+          required
+          min="0"
+          bind:value={currGas}
+          type="number"
+        />
       </div>
       <div>
         <label for="">Предыдущие</label>
-        <input required min="0" bind:value={prevGas} type="number" />
+        <input
+          step="0.01"
+          required
+          min="0"
+          bind:value={prevGas}
+          type="number"
+        />
       </div>
       <div>
         <label for="">Разница</label>
-        <input bind:value={distinctionGas} disabled type="number" />
+        <input step="0.01" bind:value={distinctionGas} disabled type="number" />
       </div>
       <div>
         <label for="">Результат</label>
-        <input bind:value={totalGas} disabled type="number" />
+        <input step="0.01" bind:value={totalGas} disabled type="number" />
       </div>
     </div>
   </div>
@@ -82,19 +111,36 @@
       {/if}
       <div>
         <label for="">Текущие</label>
-        <input required min="0" bind:value={currElec} type="number" />
+        <input
+          step="0.01"
+          required
+          min="0"
+          bind:value={currElec}
+          type="number"
+        />
       </div>
       <div>
         <label for="">Предыдущие</label>
-        <input required min="0" bind:value={prevElec} type="number" />
+        <input
+          step="0.01"
+          required
+          min="0"
+          bind:value={prevElec}
+          type="number"
+        />
       </div>
       <div>
         <label for="">Разница</label>
-        <input bind:value={distinctionElec} disabled type="number" />
+        <input
+          step="0.01"
+          bind:value={distinctionElec}
+          disabled
+          type="number"
+        />
       </div>
       <div>
         <label for="">Результат</label>
-        <input bind:value={totalElec} disabled type="number" />
+        <input step="0.01" bind:value={totalElec} disabled type="number" />
       </div>
     </div>
   </div>

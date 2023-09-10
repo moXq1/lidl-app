@@ -70,54 +70,114 @@
       </div>
       <div class="container">
         <label for="">Тариф газа</label>
-        <input required min="0" type="number" bind:value={gasPrice} />
+        <input
+          required
+          step="0.01"
+          min="0"
+          type="number"
+          bind:value={gasPrice}
+        />
         <NumberInputError value={gasPrice} />
       </div>
       <div class="container">
         <label for="">Распределение тариф</label>
-        <input required min="0" type="number" bind:value={gasRaspred} />
+        <input
+          required
+          step="0.01"
+          min="0"
+          type="number"
+          bind:value={gasRaspred}
+        />
         <NumberInputError value={gasRaspred} />
       </div>
       <div class="container">
         <label for="">Тариф воды</label>
-        <input required min="0" type="number" bind:value={waterPrice} />
+        <input
+          required
+          step="0.01"
+          min="0"
+          type="number"
+          bind:value={waterPrice}
+        />
         <NumberInputError value={waterPrice} />
       </div>
       <div class="container">
         <label for="">Абонплата</label>
-        <input required min="0" type="number" bind:value={abonplata} />
+        <input
+          required
+          step="0.01"
+          min="0"
+          type="number"
+          bind:value={abonplata}
+        />
         <NumberInputError value={abonplata} />
       </div>
       <div class="container">
         <label for=""> Тариф электроинергии</label>
-        <input required min="0" type="number" bind:value={electricityPrice} />
+        <input
+          required
+          step="0.01"
+          min="0"
+          type="number"
+          bind:value={electricityPrice}
+        />
         <NumberInputError value={electricityPrice} />
       </div>
 
       <div class="container">
         <label for="">Квартплата</label>
-        <input required min="0" type="number" bind:value={kvartplata} />
+        <input
+          required
+          step="0.01"
+          min="0"
+          type="number"
+          bind:value={kvartplata}
+        />
         <NumberInputError value={kvartplata} />
       </div>
       <div class="container">
         <label for="">Мусор</label>
-        <input required min="0" type="number" bind:value={garbage} />
+        <input
+          required
+          step="0.01"
+          min="0"
+          type="number"
+          bind:value={garbage}
+        />
         <NumberInputError value={garbage} />
       </div>
 
       <div class="container">
         <label for="">Отопление</label>
-        <input required min="0" type="number" bind:value={heating} />
+        <input
+          required
+          step="0.01"
+          min="0"
+          type="number"
+          bind:value={heating}
+        />
         <NumberInputError value={heating} />
       </div>
       <div class="container">
         <label for="">Интернет</label>
-        <input required min="0" type="number" bind:value={internet} />
+        <input
+          required
+          step="0.01"
+          min="0"
+          type="number"
+          bind:value={internet}
+        />
         <NumberInputError value={internet} />
       </div>
       <div class="container">
         <label for="">Домофон</label>
-        <input required min="0" type="number" bind:value={intercom} />
+        <input
+          required
+          step="0.01"
+          min="0"
+          type="number"
+          bind:value={intercom}
+        />
         <NumberInputError value={intercom} />
       </div>
     </div>
