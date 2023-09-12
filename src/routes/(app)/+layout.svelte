@@ -32,6 +32,8 @@
   });
 </script>
 
+<!-- <svelte:window on:onorientationchange={(e=>)}> -->
+
 <svelte:window
   on:resize={(e) => {
     if (window.innerWidth >= 900) {
@@ -372,7 +374,7 @@
 
   .option {
     padding: 5px 20px;
-
+    color: white;
     border-radius: 6px;
 
     flex: 1;

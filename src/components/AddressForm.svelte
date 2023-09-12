@@ -253,7 +253,7 @@
   button {
     padding: 1em 2em;
     background-color: var(--primary-color);
-    color: var(--text);
+    color: white;
 
     border-radius: 6px;
 

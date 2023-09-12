@@ -240,6 +240,7 @@
     font-size: 16px;
     cursor: pointer;
     border: none;
+    color: white;
   }
 
   .settings a:hover {

@@ -90,7 +90,7 @@
 
   .btns a {
     background-color: var(--primary-color);
-    color: var(--text);
+    color: white;
   }
 
   .btns button {
