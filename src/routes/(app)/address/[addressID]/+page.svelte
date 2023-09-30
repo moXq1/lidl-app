@@ -307,6 +307,11 @@
     display: grid;
     grid-template-columns: 1fr;
     align-items: center;
+    margin-block: 1rem;
+  }
+
+  .tarif:nth-of-type(1) {
+    margin-block-start: 0;
   }
 
   .tarif-table {
