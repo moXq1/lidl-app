@@ -300,6 +300,12 @@
     border-block-start: 2px solid #aaa;
   }
 
+  @supports (gap: 1rem) {
+    .tarif {
+      margin-block: 1rem;
+    }
+  }
+
   .tarif {
     background-color: white;
     padding: 10px 20px;
@@ -307,7 +313,7 @@
     display: grid;
     grid-template-columns: 1fr;
     align-items: center;
-    margin-block: 1rem;
+    margin-block: 3rem;
   }
 
   .tarif:nth-of-type(1) {
