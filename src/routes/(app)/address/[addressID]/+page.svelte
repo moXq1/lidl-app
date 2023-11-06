@@ -14,10 +14,14 @@
   function formatDate(seconds: number) {
     var t = new Date(1970, 0, 1);
     t.setSeconds(seconds);
-    return `${t.getDate().toString().padStart(2, "0")}.${t
-      .getUTCMonth()
-      .toString()
-      .padStart(2, "0")}.${t.getFullYear()}`;
+    t=t.toLocaleString('default', {  year: 'numeric',
+  month: 'short',
+  day: 'numeric' });
+return t;
+    //return `${t.getDate().toString().padStart(2, "0")}.${t
+     // .getUTCMonth()
+     // .toString()
+     // .padStart(2, "0")}.${t.getFullYear()}`;
   }
 
   async function deleteHandler(id: string) {
